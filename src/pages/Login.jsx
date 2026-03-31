@@ -7,8 +7,10 @@ const Login = () => {
             <h2>Please log in to continue</h2>
             <form>
                 <div>
+                    <h1>
                     <label htmlFor="username">Username:</label>
                     <input type="text" id="username" name="username" required />
+                    </h1>
                 </div>
                 <div>
                     <label htmlFor="password">Password:</label>
