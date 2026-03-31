@@ -88,8 +88,8 @@ function App() {
                <Inbox />
             </ProtectedRoute>
           } />
-          <Route path="/profile" element={<DummyPage title="My Profile" />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<DummyPage title="My Profile" />} />
+          <Route path="/paths" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
 
