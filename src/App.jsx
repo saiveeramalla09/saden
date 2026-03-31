@@ -61,7 +61,7 @@ function App() {
       {/* Dynamic Content Area (routes) */}
       <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }}>
         <Routes>
-          <Route path="/" element={<Explore onLoginClick={() => setShowAuthModal(true)} />} />
+          <Route path="/map" element={<Explore onLoginClick={() => setShowAuthModal(true)} />} />
           
           <Route path="/seller" element={
             <ProtectedRoute allowedRoles={[MOCK_USER_ROLES.SELLER]}>
@@ -88,8 +88,8 @@ function App() {
                <Inbox />
             </ProtectedRoute>
           } />
-          <Route path="*" element={<DummyPage title="My Profile" />} />
-          <Route path="/paths" element={<Navigate to="/" replace />} />
+          <Route path="/" element={<DummyPage title="My Profile" />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
 
